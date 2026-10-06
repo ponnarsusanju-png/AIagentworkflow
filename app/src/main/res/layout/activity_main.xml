@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Agent Workflow"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perception → Reasoning → Action"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+
+        <!-- INPUT -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your input"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example: It is very hot"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- RUN BUTTON -->
+
+        <Button
+            android:id="@+id/btnRunAgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run AI Agent"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- CLEAR BUTTON -->
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- PERCEPTION -->
+
+        <TextView
+            android:id="@+id/tvPerception"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perception: Waiting..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#E8F5E9"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- REASONING -->
+
+        <TextView
+            android:id="@+id/tvReasoning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reasoning: Waiting..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#FFF3E0"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- ACTION -->
+
+        <TextView
+            android:id="@+id/tvAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Action: Waiting..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#E3F2FD"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- FINAL RESULT -->
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agent output will appear here."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#F3E5F5"/>
+
+    </LinearLayout>
+
+</ScrollView>
